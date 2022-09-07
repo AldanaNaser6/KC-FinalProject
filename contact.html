@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacting</title>
+    <link rel="icon" href="./logo-1.png" type="" />
+    <link rel="stylesheet" href="./project.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+  </head>
+  <body>
+    <header class="navb">
+        <div class="left">
+          <a href="./homep.html">
+            <img src="./logo-1.png" width="150px" alt=""
+          /></a>
+        </div>
+  
+        <div class="right">
+          <a class="home" href="./homep.html">Home Page</a>
+          <div>
+            <a href="./homep.html#sugg">Suggestions</a>
+          </div>
+          <a href="">Contact Us</a>
+        </div>
+      </header>
+    <section id="contactMe">
+      <h1>Contact Us</h1>
+      <form action="https://formsubmit.co/aldananasser@gmail.com" method="POST">
+        <div class="field">
+          <label for="name" data-aos="zoom-in">Name</label>
+          <input
+            class="input"
+            type="text"
+            name="Name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="field" data-aos="zoom-in">
+          <label for="email">Email</label>
+          <input
+            class="input"
+            type="email"
+            name="email"
+            placeholder="Entar your email"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="massege"> Massege</label>
+          <input
+            class="input"
+            type="massege"
+            name="massege"
+            placeholder="Enter your massege"
+            required
+          />
+        </div>
+        <input id="send" class="hvr-grow" type="submit" value="send" />
+      </form>
+    </section>
+    
+    <footer>
+        <div class="footer">Copyright © 2022 ALDANA.all rights reserved</div>
+  <div style="float: right; position: relative; top: -25px;"><ul>
+    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab" aria-hidden="true"><img src="./facebook.svg" /></i></a></li>
+    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab" aria-hidden="true"><img src="./instagram.svg" /></i></a></li>
+    <li><a href="https://www.twitter.com/" target="_blank"><i class="fab" aria-hidden="true"><img src="./twitter.svg" /></i></a></li>
+  </ul></div>
+
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"
+    />
+    <script>
+      document.getElementById("send").addEventListener("click", function () {
+        Swal.fire({
+          icon: "success",
+          iconColor: `rgb(150, 65, 66)`,
+          title: "Your work has been saved",
+          showConfirmButton: true,
+          confi,
+        });
+      });
+      AOS.init();
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
